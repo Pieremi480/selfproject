@@ -1,0 +1,58 @@
+p {
+  font-family: "Acme";
+  word-spacing: 2px;
+  font-size: 16px;
+  line-height: 1.8;
+  color: #4d4d4d;
+}
+h {
+  font-family: "Acme";
+  word-spacing: 2px;
+  font-size: 19px;
+  line-height: 2;
+  color: #333333;
+}
+#background {
+  background-color: #f2f2f2;
+}
+#background2 {
+  background-color: #e6e6e6;
+}
+#background3 {
+  background-color: #d9d9d9;
+}
+#background4 {
+  background-color: #cccccc;
+}
+
+#demo {
+  color: gray;
+}
+
+button {
+  font-family: "Acme";
+  color: white;
+  padding: 6px 16px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.buttons {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+
+.buttons:hover {
+  background-color: #555555;
+  color: white;
+}
+
+#txt {
+    font-family: "Acme";
+  color: blue;
+}

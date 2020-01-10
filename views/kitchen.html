@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Kitchen</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/kitchen.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://static.cms.yp.ca/ecms/media/1/pros-and-cons-of-wooden-kitchen-cabinets-1427729533-600x360.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://www.whingewhingewine.co.uk/wp-content/uploads/2019/03/IMG_20190304_090117-735x450.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQU53Kh29m1lbJQhg3Xp80lNBNq-NUaLKBmfHuPN2tr4BBjJol1"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          You walk in and see a kitchen. You think there might be food. It looks
+          like a normal kitchen, there is a fridge, an oven, and even a
+          dishwasher. When you go through the cupboards there is nothing in
+          them. Not even a crumb can be found, the place is spotless. It is like
+          this space has never seen dirt. Looking around, you see a table and
+          three doors. Which door do you go to?
+        </p>
+      </div>
+    </div>
+    <!-- a grid to keep the buttons evenly spaced apart -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo"
+            >
+              Door 1
+            </button>
+            <div id="demo" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-4">
+                <p id="background">
+                  You walk up and see a white wooden door with a touch screen
+                  keypad beside it. On the touch screen is a question “What are
+                  the three code languages we used?” Do you try to answer.
+                </p>
+                <!-- yes and no button -->
+                <button type="button" class="button buttons" onclick="door1()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo2"
+            >
+              Door 2
+            </button>
+            <div id="demo2" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-4">
+                <p id="background2">
+                  You walk up and see a white wooden door with a touch screen
+                  keypad beside it. On the touch screen is a question “What does
+                  API stand for?” Do you try to answer.
+                </p>
+                <!-- yes and no buttons -->
+                <button type="button" class="button buttons" onclick="door2()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo3"
+            >
+              Door 3
+            </button>
+            <div id="demo3" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-4">
+                <p id="background3">
+                  You enter and see a white wooden door with a touch screen
+                  keypad beside it. On the touch screen is a question “What can
+                  you to to check if your external javascript is linked properly
+                  to your html?” Do you try to answer.
+                </p>
+                <!-- yes and no button-->
+                <button type="button" class="button buttons" onclick="door3()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

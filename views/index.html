@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>The White Room</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/client.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- image gallery -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://i.pinimg.com/originals/75/0d/63/750d630a209d8c86c98ffd66d304635b.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://ak3.picdn.net/shutterstock/videos/6609863/thumb/1.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://ak0.picdn.net/shutterstock/videos/1010107970/thumb/1.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- well and pannle for explenation of room -->
+    <div class="container">
+      <div class="panel panel-default" id="pl">
+        <div class="panel-heading">
+          <p>
+            The first thing you see when you wake is the light. It's bright and
+            bothers your eyes, but they slowly adjust. The ground is cold, soft
+            and everything it white. You look around now that your eyes have
+            adjusted and see that you are in what seems to be a white box. And
+            you see four doors. Your mind starts working and you think where am
+            I? How did I get here? and who am I?….. You think hard and your
+            brain starts to hurt. You think until you can't take it anymore. Who
+            are you…
+          </p>
+        </div>
+        <div class="panel-body">
+          <p>
+            Then reality kicks in and you know you can't stay here. You need
+            food and water and freedom. Then you can figure out who you are, or
+            someone can tell you who you are. You look down and notice you are
+            wearing a white t-shirt and white pants. Why white? You get up and…
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- drop down pannles -->
+    <div class="container">
+      <div class="panel-group" id="accordion">
+        <div class="panel-heading"></div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2"
+              ><h>Look down and around the ground.</h></a
+            >
+          </h4>
+        </div>
+        <div id="collapse2" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              There is nothing on the ground. You begin to panic. What if you
+              are trapped in here forever. The doors might be the only way out.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3"
+              ><h>Inspect the doors</h></a
+            >
+          </h4>
+        </div>
+        <div id="collapse3" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>
+              Looking at the doors you can see that there are keypads beside
+              everyone of them, each with a question on it. Maybe that will open
+              the door. The only problem is where will the doors take you. You
+              hope it is a smart choice. You walk up and try to open one of the
+              doors.
+            </p>
+            <!-- conatainer in rows for eveon spacing collapse buttons -->
+            <div class="row">
+              <div class="col-sm-3">
+                <!-- collapse button -->
+                <div class="container">
+                  <a href="#demo" class="btn btn-info" data-toggle="collapse"
+                    >Door 1</a
+                  >
+                  <div id="demo" class="collapse">
+                    <div class="row">
+                      <!-- container for hidden text -->
+                      <div class="col-sm-3">
+                        <p id="background">
+                          You walk up and see a white wooden door with a touch
+                          screen keypad beside it. On the touch screen is a
+                          question “What are the three code languages we used?”
+                          Do you try to answer.
+                        </p>
+                        <!-- yes and no buttons -->
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="door1()"
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="exit()"
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- eveon spacing collapse buttons -->
+              <div class="col-sm-3">
+                <div class="container">
+                  <a href="#demo2" class="btn btn-info" data-toggle="collapse"
+                    >Door 2</a
+                  >
+                  <div id="demo2" class="collapse">
+                    <div class="row">
+                      <!-- container for hidden text -->
+                      <div class="col-sm-3">
+                        <p id="background2">
+                          You walk up and see a white wooden door with a touch
+                          screen keypad beside it. On the touch screen is a
+                          question “What does API stand for?” Do you try to
+                          answer.
+                        </p>
+                        <!-- yes and no buttons-->
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="door2()"
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="exit()"
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- eveon spacing collapse buttons -->
+              <div class="col-sm-3">
+                <div class="container">
+                  <a href="#demo3" class="btn btn-info" data-toggle="collapse"
+                    >Door 3</a
+                  >
+                  <div id="demo3" class="collapse">
+                    <div class="row">
+                      <!-- container for hidden text -->
+                      <div class="col-sm-3">
+                        <p id="background3">
+                          You walk up and see a white wooden door with a touch
+                          screen keypad beside it. On the touch screen is a
+                          question “What is an example of a free front-end
+                          framework for faster and easier web development?” Do
+                          you try to answer.
+                        </p>
+                        <!-- yes and no buttons-->
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="door3()"
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="exit()"
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- eveon spacing collapse buttons -->
+              <div class="col-sm-3">
+                <div class="container">
+                  <a href="#demo4" class="btn btn-info" data-toggle="collapse"
+                    >Door 4</a
+                  >
+                  <div id="demo4" class="collapse">
+                    <div class="row">
+                      <!-- container for hidden text -->
+                      <div class="col-sm-2">
+                        <p id="background4">
+                          You walk up and see a white wooden door with a touch
+                          screen keypad beside it. On the touch screen is a
+                          question “What can you do to cheek if your external
+                          javascript is linked properly to your html?” Do you try
+                          to answer.
+                        </p>
+                        <!-- yes and no buttons-->
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="door4()"
+                        >
+                          Yes
+                        </button>
+                        <button
+                          type="button"
+                          class="button buttons"
+                          onclick="exit()"
+                        >
+                          No
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- href links that can be used to check other pages
+    <div>
+      <a href="/bedroom">bedroom</a>
+      <a href="/codeRoom">codeRoom</a>
+      <a href="/furnace">furnace</a>
+      <a href="/garden">garden</a>
+      <a href="/kitchen">kitchen</a>
+      <a href="/lab">lab</a>
+      <a href="/livingRoom">livingRoom</a>
+      <a href="/outside">outside</a>
+      <a href="/pit">pit</a>
+      <a href="/testRoom">testRoom</a>
+      <a href="/walkway">walkway</a>
+      <a href="/">link text</a>
+    </div>
+ -->
+  </body>
+</html>
