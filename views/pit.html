@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Death</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/pit.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://i.pinimg.com/originals/49/a9/74/49a9741c16539f7d401a3f3396ff3678.png"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://ak1.picdn.net/shutterstock/videos/25076321/thumb/7.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Darkness.png"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          At first you just spend time walking in the dark you can't see
+          anything. Then you feel yourself start to fall. You begin to fall
+          faster and faster. You fear the impact of the landing, but it doesn’t
+          happen.. Instead you feel your entire body start to ache. At first the
+          pain in minimal but then it worsens and burns. You start to gasp for
+          air as you feel the fire and heat in your body. Then nothing.
+          Everything comes to and abrupt end.
+        </p>
+      </div>
+    </div>
+    <!-- collabsibal button -->
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-info"
+        data-toggle="collapse"
+        data-target="#demo"
+      >
+        What's Next
+      </button>
+      <div id="demo" class="collapse">
+        <!-- grid conntainer to keep the hidden text within -->
+        <div class="col-sm-5">
+          <p id="background">
+            Death restart
+          </p>
+          <!-- yes and no button -->
+          <button type="button" class="button buttons" onclick="restart()">
+            Yes
+          </button>
+          <button type="button" class="button buttons" onclick="exit()">
+            No
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

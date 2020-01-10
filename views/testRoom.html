@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test Room</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/testRoom.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://kakakilabot.files.wordpress.com/2015/01/white-room.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/31Bv5zQ2FjL._SL500_.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://www.designersofas4u.co.uk/images/pictures/product-images/jb/jb-new/torino-white-chair.jpg?v=d0804e42"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          You walk into a room as white as the room you started in only this one
+          is very small. When you put your arms out you can touch both walls.
+          The only thing in this room is a white desk with a white chair. There
+          are no other doors in this room besides the one you entered from.. Do
+          you exit this room?
+        </p>
+      </div>
+    </div>
+    <!-- collabsibal button -->
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-info"
+        data-toggle="collapse"
+        data-target="#demo"
+      >
+        The Door
+      </button>
+      <div id="demo" class="collapse">
+        <!-- grid conntainer to keep the hidden text within -->
+        <div class="col-sm-5">
+          <p id="background">
+            You walk up and see a white wooden door with a touch screen keypad
+            beside it. On the touch screen is a question “What can you to to
+            check if your external javascript is linked properly to your html?”
+            Do you try to answer.
+          </p>
+          <!-- yes and no button -->
+          <button type="button" class="button buttons" onclick="door1()">
+            Yes
+          </button>
+          <button type="button" class="button buttons" onclick="exit()">
+            No
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

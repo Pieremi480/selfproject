@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Freedom</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/outside.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://images.fineartamerica.com/images-medium-large-5/3-bright-sky-les-cunliffe.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://images.unsplash.com/photo-1438786657495-640937046d18?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://whc.unesco.org/uploads/thumbs/news_1987-890-520-20190805144215.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          The door slowly move open as you push has hard as you can. The light
+          hits your eyes hard, you take a second for your eyes to adjust to what
+          they are seeing. You feel warm and happy. You look around are see
+          land. The grass is green there are hills and trees as far as you can
+          see. There are flowers, rivers, and shrubs all around. It is almost
+          perfect, and you are content and pleased.. Finally, you have made it
+          out. The only question is what will you do next.
+        </p>
+      </div>
+    </div>
+    <!-- collabsibal button -->
+    <div class="container">
+      <button
+        type="button"
+        class="btn btn-info"
+        data-toggle="collapse"
+        data-target="#demo"
+      >
+        What Next
+      </button>
+      <div id="demo" class="collapse">
+        <!-- grid conntainer to keep the hidden text within -->
+        <div class="col-sm-5">
+          <p id="background">
+            You are out. Want to play again
+          </p>
+          <!-- yes and no button -->
+          <button type="button" class="button buttons" onclick="restart()">
+            Yes
+          </button>
+          <button type="button" class="button buttons" onclick="exit()">
+            No
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

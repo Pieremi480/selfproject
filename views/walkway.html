@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Walkway</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/walkway.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/I/71NPtaj0lnL._SX466_.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/14-46-35-f-mutzig.jpg/1200px-14-46-35-f-mutzig.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://thumbs.dreamstime.com/b/iron-door-warship-old-thailand-33940415.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          This isn't a room it's a walkway. The walls are made of cement and
+          there are lights guiding your way on the ground. You wonder if this
+          could lead to the end of the maze and freedom. You hesitate, but what
+          if it's worse? What if it kills you? You stop and look back at the
+          three doors including the one you came from. Ahead of you is a huge
+          metal door. It is three times your size. You go towards...
+        </p>
+      </div>
+    </div>
+    <!-- a grid to keep the buttons evenly spaced apart -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo"
+            >
+              Door 1
+            </button>
+            <div id="demo" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-3">
+                <p id="background">
+                  You walk up and see a wooden door with no handle, beside it is
+                  a touch screen keypad with a question on it “What Should go at the end of every line of code in js?” Do you try to answer.
+                </p>
+                <!-- yes and no button -->
+                <button type="button" class="button buttons" onclick="door1()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo2"
+            >
+              Door 2
+            </button>
+            <div id="demo2" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-3">
+                <p id="background2">
+                  You walk up and see a glass door with a touch screen keypad
+                  beside it. On the touch screen is a question “What would you
+                  do to comment hello in html?” Do you try to answer.
+                </p>
+                <!-- yes and no buttons -->
+                <button type="button" class="button buttons" onclick="door2()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo3"
+            >
+              Door 3
+            </button>
+            <div id="demo3" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-3">
+                <p id="background3">
+                  You walk up and see a metal door with markings on it. Beside
+                  it is a touch screen keypad. On the touch screen is a question
+                  “What is the date of the exam?” Do you try to answer.
+                </p>
+                <!-- yes and no button-->
+                <button type="button" class="button buttons" onclick="door3()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- container for the collapse button -->
+        <div class="col-sm-3">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo4"
+            >
+              Door 4
+            </button>
+            <div id="demo4" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-3">
+                <p id="background4">
+                  You walk up and see a metal door with markings on it. Beside
+                  it is a touch screen keypad. On the touch screen is a question
+                  “Choose a number between 1 and 3?” Do you try to answer.
+                </p>
+                <!-- yes and no button-->
+                <button type="button" class="button buttons" onclick="door4()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

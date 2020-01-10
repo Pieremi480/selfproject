@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Living Room</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/livingRoom.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://i.ytimg.com/vi/RfYc0BUqkMs/maxresdefault.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://www.stovax.com/wp-content/uploads/Victorial-Tiled-convector-Matt-Black-6900-Brick-set-lb.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://image.freepik.com/free-vector/closed-realistic-door-isolated_97886-2514.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          You walk in and the space resembles a living room. In it you see a
+          couch and a chair along the one wall, and a coffee table in the middle
+          of the room. There is no art on the walls and no TV in the room. You
+          examine the couch and chair by removing the pillows hoping there will
+          be something hidden inside that might offer help. There is nothing.
+          You get up and go towards ...
+        </p>
+      </div>
+    </div>
+    <!-- a grid to keep the buttons evenly spaced apart -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo"
+            >
+              Door 1
+            </button>
+            <div id="demo" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-4">
+                <p id="background">
+                  You walk up and see a white wooden door with a touch screen
+                  keypad beside it. On the touch screen is a question “What does
+                  API stand for?” Do you try to answer.
+                </p>
+                <!-- yes and no button -->
+                <button type="button" class="button buttons" onclick="door1()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo2"
+            >
+              Door 2
+            </button>
+            <div id="demo2" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-4">
+                <p id="background2">
+                  You walk up and see a white wooden door with a touch screen
+                  keypad beside it. On the touch screen is a question “What is
+                  an example of a free front-end framework for faster and easier
+                  web development?” Do you try to answer.
+                </p>
+                <!-- yes and no buttons -->
+                <button type="button" class="button buttons" onclick="door2()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo3"
+            >
+              Door 3
+            </button>
+            <div id="demo3" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-4">
+                <p id="background3">
+                  You walk up and see a white metal door with a touch screen
+                  keypad beside it. On the touch screen is a question “Which of
+                  the following is the proper start to an array a) var test =[];
+                  b)[var test] c)var array d) test=array?” Do you try to answer.
+                </p>
+                <!-- yes and no button-->
+                <button type="button" class="button buttons" onclick="door3()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

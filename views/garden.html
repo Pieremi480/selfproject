@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Garden</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="/garden.js" defer></script>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- google founts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Acme"
+      rel="stylesheet"
+    />
+    <!-- bootstrap link -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <!-- the following is the code for the image gallary -->
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://i.ytimg.com/vi/yVb0mfmMV9w/maxresdefault.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://gardenerspath.com/wp-content/uploads/2019/03/17-Best-Temperate-Flowering-Perennials-That-Will-Grow-Almost-Anywhere-FB.jpg"
+              style="width:100%"
+            />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail">
+            <img
+              src="https://eus-www.sway-cdn.com/s/lS9lnvgYelIJHUrK/images/csweH7hj74FsUq?quality=960&allowAnimation=false"
+              style="width:100%"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- a well with the paragrph discribing the room -->
+    <div class="container">
+      <div class="well">
+        <p>
+          The second you enter this room you feel like you have escaped! There
+          are trees and plants everywhere. It is beautiful. The colours are
+          vibrant, there is nothing dead it's all beautiful and thriving. You
+          start to run. You feel the further you can get from this place the better. But then you start to sense something is not right. You
+          stop and look around. The sky is strange. The birds are not moving.
+          It's not real. You are still trapped. You could give up now and remain
+          in this place. But it is not real. Looking around you can see another door that is not the one you
+          entered by.
+        </p>
+      </div>
+    </div>
+    <!-- a grid to keep the buttons evenly spaced apart -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo"
+            >
+              Door 1
+            </button>
+            <div id="demo" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-5">
+                <p id="background">
+                  You walk up and see a wooden door with a window at the top,
+                  beside it is a touch screen keypad. On the touch screen is a
+                  question “What shows hidden files in a raspberry pi?” Do
+                  you try to answer.
+                </p>
+                <!-- yes and no button -->
+                <button type="button" class="button buttons" onclick="door1()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-5">
+          <!-- collabsibal button -->
+          <div class="container">
+            <button
+              type="button"
+              class="btn btn-info"
+              data-toggle="collapse"
+              data-target="#demo2"
+            >
+              Door 2
+            </button>
+            <div id="demo2" class="collapse">
+              <!-- grid conntainer to keep the hidden text within -->
+              <div class="col-sm-5">
+                <p id="background2">
+                  You walk up and see a white wooden door with a touch screen
+                  keypad beside it. On the touch screen is a question “What are
+                  the three code languages we used?” Do you try to answer.
+                </p>
+                <!-- yes and no buttons -->
+                <button type="button" class="button buttons" onclick="door2()">
+                  Yes
+                </button>
+                <button type="button" class="button buttons" onclick="exit()">
+                  No
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
